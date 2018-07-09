@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Classroom</string>
+    <string name="greet">Halo!</string>
+    <string name="feedback">Feedback</string>
+    <string name="pengurus_kelas">Pengurus Kelas</string>
+    <string name="piket">Piket</string>
+    <string name="pelajaran">Pelajaran</string>
+</resources>
