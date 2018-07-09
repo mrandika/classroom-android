@@ -14,6 +14,9 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.github.javiersantos.appupdater.AppUpdater;
+import com.github.javiersantos.appupdater.enums.UpdateFrom;
+
 public class MainActivity extends AppCompatActivity {
 
     TextView namaUser;
@@ -22,6 +25,14 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        AppUpdater appUpdater = new AppUpdater(this);
+        appUpdater.start();
+
+        new AppUpdater(this)
+                .setUpdateFrom(UpdateFrom.GITHUB)
+                .setGitHubUserAndRepo("mrandika", "classroom-android")
+                .start();
+
         final SharedPreferences prefs = PreferenceManager
                 .getDefaultSharedPreferences(this);
         String userName = prefs.getString("username", null);
@@ -75,23 +86,21 @@ public class MainActivity extends AppCompatActivity {
         cardKabinet.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Context context = getApplicationContext();
-                CharSequence text = "Card Kabinet di tap.";
-                int duration = Toast.LENGTH_SHORT;
-
-                Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
+                Intent intent = new Intent(MainActivity.this, kabinet.class);
+                startActivity(intent);
             }
         });
         cardFeedback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Context context = getApplicationContext();
-                CharSequence text = "Card Feedback di tap.";
-                int duration = Toast.LENGTH_SHORT;
+                final Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
 
-                Toast toast = Toast.makeText(context, text, duration);
-                toast.show();
+                emailIntent.setType("plain/text");
+                emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"mrizkiandika226@gmail.com"});
+                emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Feedback untuk aplikasi Classroom");
+                emailIntent.putExtra(android.content.Intent.EXTRA_TEXT, "");
+
+                startActivity(Intent.createChooser(emailIntent, "Kirim Feedback..."));
             }
         });
     }

@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="org.dtek.andika.classroom">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -22,9 +25,20 @@
             android:name=".pelajaran"
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
-        <activity android:name=".piket"
+        <activity
+            android:name=".piket"
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
+        <activity
+            android:name=".kabinet"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".piketSenin" />
+        <activity android:name=".piketSelasa" />
+        <activity android:name=".piketRabu" />
+        <activity android:name=".piketKamis" />
+        <activity android:name=".piketJumat" />
+        <activity android:name=".piketSabtu"></activity>
     </application>
 
 </manifest>
