@@ -33,12 +33,24 @@
             android:name=".kabinet"
             android:configChanges="orientation"
             android:screenOrientation="portrait" />
-        <activity android:name=".piketSenin" />
-        <activity android:name=".piketSelasa" />
-        <activity android:name=".piketRabu" />
-        <activity android:name=".piketKamis" />
-        <activity android:name=".piketJumat" />
-        <activity android:name=".piketSabtu"></activity>
+        <activity android:name=".piketSenin"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".piketSelasa"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".piketRabu"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".piketKamis"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".piketJumat"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".piketSabtu"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
