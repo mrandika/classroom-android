@@ -25,37 +25,43 @@ public class pelajaran extends AppCompatActivity {
         pelajarancardSenin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(pelajaran.this, pelajaranSenin.class);
+                startActivity(intent);
             }
         });
         pelajarancardSelasa.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(pelajaran.this, pelajaranSelasa.class);
+                startActivity(intent);
             }
         });
         pelajarancardRabu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(pelajaran.this, pelajaranRabu.class);
+                startActivity(intent);
             }
         });
         pelajarancardKamis.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(pelajaran.this, pelajaranKamis.class);
+                startActivity(intent);
             }
         });
         pelajarancardJumat.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(pelajaran.this, pelajaranJumat.class);
+                startActivity(intent);
             }
         });
         pelajarancardSabtu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(pelajaran.this, pelajaranSabtu.class);
+                startActivity(intent);
             }
         });
     }

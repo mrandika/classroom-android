@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">Classroom</string>
+    <string name="app_nameBeta">Classroom Beta</string>
     <string name="greet">Halo!</string>
-    <string name="feedback">Feedback</string>
+    <string name="feedback">Saran</string>
+    <string name="feedbackBeta">Beta Feedback</string>
     <string name="pengurus_kelas">Pengurus Kelas</string>
     <string name="piket">Piket</string>
     <string name="pelajaran">Pelajaran</string>
@@ -17,7 +19,8 @@
 
     // Start of Senin
     <string name="senin">Senin</string>
-    <string name="pelajaran.senin1">NULL</string>
+    <string name="pelajaran.senin">Pelajaran Senin</string>
+    <string name="piket.senin">Piket Senin</string>
     <string name="piket.senin1">Asmaul Sufarhansyah</string>
     <string name="piket.senin2">M. Alkausar Ramadhan</string>
     <string name="piket.senin3">Kemas M. Rafli</string>
@@ -26,7 +29,8 @@
     <string name="piket.senin6">Sigit Andreas</string>
     <string-array name="senin">
         <item>@string/senin</item>
-        <item>@string/pelajaran.senin1</item>
+        <item>@string/pelajaran.senin</item>
+        <item>@string/piket.senin</item>
         <item>@string/piket.senin1</item>
         <item>@string/piket.senin2</item>
         <item>@string/piket.senin3</item>
@@ -38,7 +42,8 @@
 
     // Start of Selasa
     <string name="selasa">Selasa</string>
-    <string name="pelajaran.selasa1">NULL</string>
+    <string name="pelajaran.selasa">Pelajaran Selasa</string>
+    <string name="piket.selasa">Piket Selasa</string>
     <string name="piket.selasa1">Imam Mardani</string>
     <string name="piket.selasa2">Rizky Surya</string>
     <string name="piket.selasa3">Putriana Alfatikasari</string>
@@ -47,7 +52,8 @@
     <string name="piket.selasa6">Maulana Yusuf</string>
     <string-array name="selasa">
         <item>@string/selasa</item>
-        <item>@string/pelajaran.selasa1</item>
+        <item>@string/pelajaran.selasa</item>
+        <item>@string/piket.selasa</item>
         <item>@string/piket.selasa1</item>
         <item>@string/piket.selasa2</item>
         <item>@string/piket.selasa3</item>
@@ -59,7 +65,8 @@
 
     // Start of Rabu
     <string name="rabu">Rabu</string>
-    <string name="pelajaran.rabu1">NULL</string>
+    <string name="pelajaran.rabu">Pelajaran Rabu</string>
+    <string name="piket.rabu">Piket Rabu</string>
     <string name="piket.rabu1">Aditya Augustaf</string>
     <string name="piket.rabu2">Nabil Arfian</string>
     <string name="piket.rabu3">M. Syaiful Iskandar</string>
@@ -68,7 +75,8 @@
     <string name="piket.rabu6">Istiq Harun K. M.</string>
     <string-array name="rabu">
         <item>@string/rabu</item>
-        <item>@string/pelajaran.rabu1</item>
+        <item>@string/pelajaran.rabu</item>
+        <item>@string/piket.rabu</item>
         <item>@string/piket.rabu1</item>
         <item>@string/piket.rabu2</item>
         <item>@string/piket.rabu3</item>
@@ -80,7 +88,8 @@
 
     // Start of Kamis
     <string name="kamis">Kamis</string>
-    <string name="pelajaran.kamis1">NULL</string>
+    <string name="pelajaran.kamis">Pelajaran Kamis</string>
+    <string name="piket.kamis">Piket Kamis</string>
     <string name="piket.kamis1">M. Hikmal Ramadhani</string>
     <string name="piket.kamis2">Diantama Maulana</string>
     <string name="piket.kamis3">M. Fatah Hidayat</string>
@@ -89,7 +98,8 @@
     <string name="piket.kamis6">Fitriyani Gita Tabila</string>
     <string-array name="kamis">
         <item>@string/kamis</item>
-        <item>@string/pelajaran.kamis1</item>
+        <item>@string/pelajaran.kamis</item>
+        <item>@string/piket.kamis</item>
         <item>@string/piket.kamis1</item>
         <item>@string/piket.kamis2</item>
         <item>@string/piket.kamis3</item>
@@ -101,7 +111,8 @@
 
     // Start of Jumat
     <string name="jumat">Jumat</string>
-    <string name="pelajaran.jumat1">NULL</string>
+    <string name="pelajaran.jumat">Pelajaran Jumat</string>
+    <string name="piket.jumat">Piket Jumat</string>
     <string name="piket.jumat1">Riki Kusworo</string>
     <string name="piket.jumat2">M. Muhyi Rasyidin</string>
     <string name="piket.jumat3">Fandi Arya P.</string>
@@ -110,7 +121,8 @@
     <string name="piket.jumat6">Kevin Surya Augusto</string>
     <string-array name="jumat">
         <item>@string/jumat</item>
-        <item>@string/pelajaran.jumat1</item>
+        <item>@string/pelajaran.jumat</item>
+        <item>@string/piket.jumat</item>
         <item>@string/piket.jumat1</item>
         <item>@string/piket.jumat2</item>
         <item>@string/piket.jumat3</item>
@@ -122,7 +134,8 @@
 
     // Start of Sabtu
     <string name="sabtu">Sabtu</string>
-    <string name="pelajaran.sabtu1">NULL</string>
+    <string name="pelajaran.sabtu">Pelajaran Sabtu</string>
+    <string name="piket.sabtu">Piket Sabtu</string>
     <string name="piket.sabtu1">Luthfi Ali Qodri</string>
     <string name="piket.sabtu2">Noviardita Ramadhani</string>
     <string name="piket.sabtu3">Ardian Figo</string>
@@ -130,7 +143,8 @@
     <string name="piket.sabtu5">M. Riztaffa Firli</string>
     <string-array name="sabtu">
         <item>@string/sabtu</item>
-        <item>@string/pelajaran.sabtu1</item>
+        <item>@string/pelajaran.sabtu</item>
+        <item>@string/piket.sabtu</item>
         <item>@string/piket.sabtu1</item>
         <item>@string/piket.sabtu2</item>
         <item>@string/piket.sabtu3</item>
