@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="org.dtek.andika.classroom.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp">
+        <TextView
+            android:id="@+id/appname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/laporanPiket"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp">
+            <RadioButton
+                android:id="@+id/automaticData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Isi data otomatis" />
+            <TextView
+                android:id="@+id/data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp" />
+            <EditText
+                android:id="@+id/hari"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Hari"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:singleLine="true"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/tanggal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tanggal"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:singleLine="true"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/ruang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ruangan (contoh: 01)"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:singleLine="true" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="Keterangan Ketuntasan" />
+            <CheckBox
+                android:id="@+id/menyapu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Menyapu" />
+            <CheckBox
+                android:id="@+id/mengepel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mengepel" />
+            <CheckBox
+                android:id="@+id/papanTulis"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Membersihkan papan tulis" />
+            <CheckBox
+                android:id="@+id/alatElektronik"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pengecekan alat elektronik (AC, Kipas, Projector)" />
+            <CheckBox
+                android:id="@+id/tataLetak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tata letak" />
+            <CheckBox
+                android:id="@+id/sarpras"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pengembalian sarana dan prasarana" />
+
+            <EditText
+                android:id="@+id/keteranganTambahan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Keterangan Tambahan"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:singleLine="false"
+                android:visibility="gone" />
+            <Button
+                android:id="@+id/kirimLaporan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kirim"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

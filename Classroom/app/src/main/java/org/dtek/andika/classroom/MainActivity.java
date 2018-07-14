@@ -17,10 +17,18 @@ import android.widget.TextView;
 import com.github.javiersantos.appupdater.AppUpdater;
 import com.github.javiersantos.appupdater.enums.UpdateFrom;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class MainActivity extends AppCompatActivity {
 
-    TextView namaUser, feedback, appname;
-    CardView cardPelajaran, cardPiket, cardKabinet, cardFeedback;
+    @BindView(R.id.namaUser)TextView namaUser;
+    @BindView(R.id.feedback)TextView feedback;
+    @BindView(R.id.appname)TextView appname;
+    @BindView(R.id.cardPelajaran)CardView cardPelajaran;
+    @BindView(R.id.cardPiket)CardView cardPiket;
+    @BindView(R.id.cardKabinet)CardView cardKabinet;
+    @BindView(R.id.cardFeedback)CardView cardFeedback;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,18 +71,11 @@ public class MainActivity extends AppCompatActivity {
                                 }
                             }).create();
             dialog.show();
-
         }
 
         setContentView(R.layout.activity_main);
         // Delegasi Widgets
-        namaUser = findViewById(R.id.namaUser);
-        feedback = findViewById(R.id.feedback);
-        appname = findViewById(R.id.appname);
-        cardPelajaran = findViewById(R.id.cardPelajaran);
-        cardPiket = findViewById(R.id.cardPiket);
-        cardKabinet = findViewById(R.id.cardKabinet);
-        cardFeedback = findViewById(R.id.cardFeedback);
+        ButterKnife.bind(this);
 
         if (userName == null) {
             namaUser.setText(R.string.greet);
@@ -82,7 +83,7 @@ public class MainActivity extends AppCompatActivity {
             namaUser.setText("Halo, "+userName+"!");
         }
 
-        if (appVersion.contains("DEBUG")) {
+        if ((appVersion.contains("DEBUG") || (appVersion.contains("BETA") || (appVersion.contains("ALPHA"))))) {
             // Jika versi beta/alpha
             feedback.setText(R.string.feedbackBeta);
             appname.setText(R.string.app_nameBeta);
@@ -115,20 +116,35 @@ public class MainActivity extends AppCompatActivity {
         cardFeedback.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                final Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
+                if ((appVersion.contains("DEBUG") || (appVersion.contains("BETA") || (appVersion.contains("ALPHA"))))) {
+                    final Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
+                    emailIntent.setType("plain/text");
+                    emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"mrizkiandika226@gmail.com"});
+                    emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "[FEEDBACK Beta] Aplikasi Classroom");
+                    emailIntent.putExtra(Intent.EXTRA_TEXT,
+                            "[Informasi Pengguna dan Perangkat]\n"
+                                    +"Nama Pengguna: " + userName + "\n"
+                                    + "ID Aplikasi: " + appID + "\n"
+                                    + "Versi Aplikasi: " + appVersion + "\n"
+                                    + "Perangkat: " + deviceBrand + " - " + deviceModel + "\n"
+                                    + "Versi Android: " + deviceVersion + "\n\n"+"[Kolom Feedback Pengguna]\n\n");
 
-                emailIntent.setType("plain/text");
-                emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"mrizkiandika226@gmail.com"});
-                emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "[FEEDBACK] Aplikasi Classroom");
-                emailIntent.putExtra(Intent.EXTRA_TEXT,
-                        "[User and Device Info]\n"
-                                +"Username: " + userName + "\n"
-                                + "Application ID: " + appID + "\n"
-                                + "Application Version: " + appVersion + "\n"
-                                + "Device: " + deviceBrand + " - " + deviceModel + "\n"
-                                + "Android Version: " + deviceVersion + "\n\n"+"[User Feedback Field]\n\n");
+                    startActivity(Intent.createChooser(emailIntent, "Kirim Feedback..."));
+                } else {
+                    final Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
+                    emailIntent.setType("plain/text");
+                    emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"mrizkiandika226@gmail.com"});
+                    emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "[SARAN] Aplikasi Classroom");
+                    emailIntent.putExtra(Intent.EXTRA_TEXT,
+                            "[Informasi Pengguna dan Perangkat]\n"
+                                    +"Nama Pengguna: " + userName + "\n"
+                                    + "ID Aplikasi: " + appID + "\n"
+                                    + "Versi Aplikasi: " + appVersion + "\n"
+                                    + "Perangkat: " + deviceBrand + " - " + deviceModel + "\n"
+                                    + "Versi Android: " + deviceVersion + "\n\n"+"[Kolom Saran Pengguna]\n\n");
 
-                startActivity(Intent.createChooser(emailIntent, "Kirim Feedback..."));
+                    startActivity(Intent.createChooser(emailIntent, "Kirim Saran..."));
+                }
             }
         });
     }

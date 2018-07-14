@@ -6,6 +6,7 @@
     <string name="feedbackBeta">Beta Feedback</string>
     <string name="pengurus_kelas">Pengurus Kelas</string>
     <string name="piket">Piket</string>
+    <string name="laporanPiket">Laporan Piket</string>
     <string name="pelajaran">Pelajaran</string>
 
     <string-array name="hari">

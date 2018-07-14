@@ -5,22 +5,36 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
+import android.widget.ImageButton;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
 
 public class piket extends AppCompatActivity {
 
-    CardView piketcardSenin, piketcardSelasa, piketcardRabu, piketcardKamis, piketcardJumat, piketcardSabtu;
+    @BindView(R.id.unggahLaporan)ImageButton unggahLaporan;
+    @BindView(R.id.piketcardSenin)CardView piketcardSenin;
+    @BindView(R.id.piketcardSelasa)CardView piketcardSelasa;
+    @BindView(R.id.piketcardRabu)CardView piketcardRabu;
+    @BindView(R.id.piketcardKamis)CardView piketcardKamis;
+    @BindView(R.id.piketcardJumat)CardView piketcardJumat;
+    @BindView(R.id.piketcardSabtu)CardView piketcardSabtu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_piket);
 
-        piketcardSenin = findViewById(R.id.piketcardSenin);
-        piketcardSelasa = findViewById(R.id.piketcardSelasa);
-        piketcardRabu = findViewById(R.id.piketcardRabu);
-        piketcardKamis = findViewById(R.id.piketcardKamis);
-        piketcardJumat = findViewById(R.id.piketcardJumat);
-        piketcardSabtu = findViewById(R.id.piketcardSabtu);
+        // Delegasi Widgets
+        ButterKnife.bind(this);
+
+        unggahLaporan.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(piket.this, laporanPiket.class);
+                startActivity(intent);
+            }
+        });
 
         piketcardSenin.setOnClickListener(new View.OnClickListener() {
             @Override

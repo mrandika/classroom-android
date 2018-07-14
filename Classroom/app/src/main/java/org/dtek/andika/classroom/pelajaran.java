@@ -6,21 +6,25 @@ import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class pelajaran extends AppCompatActivity {
 
-    CardView pelajarancardSenin, pelajarancardSelasa, pelajarancardRabu, pelajarancardKamis, pelajarancardJumat, pelajarancardSabtu;
+    @BindView(R.id.pelajarancardSenin)CardView pelajarancardSenin;
+    @BindView(R.id.pelajarancardSelasa)CardView pelajarancardSelasa;
+    @BindView(R.id.pelajarancardRabu)CardView pelajarancardRabu;
+    @BindView(R.id.pelajarancardKamis)CardView pelajarancardKamis;
+    @BindView(R.id.pelajarancardJumat)CardView pelajarancardJumat;
+    @BindView(R.id.pelajarancardSabtu)CardView pelajarancardSabtu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_pelajaran);
 
-        pelajarancardSenin = findViewById(R.id.pelajarancardSenin);
-        pelajarancardSelasa = findViewById(R.id.pelajarancardSelasa);
-        pelajarancardRabu = findViewById(R.id.pelajarancardRabu);
-        pelajarancardKamis = findViewById(R.id.pelajarancardKamis);
-        pelajarancardJumat = findViewById(R.id.pelajarancardJumat);
-        pelajarancardSabtu = findViewById(R.id.pelajarancardSabtu);
+        // Delegasi Widgets
+        ButterKnife.bind(this);
 
         pelajarancardSenin.setOnClickListener(new View.OnClickListener() {
             @Override

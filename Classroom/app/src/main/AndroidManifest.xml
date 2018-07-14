@@ -61,25 +61,28 @@
         <activity
             android:name=".pelajaranSenin"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".pelajaranSelasa"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".pelajaranRabu"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".pelajaranKamis"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".pelajaranJumat"
             android:configChanges="orientation"
-            android:screenOrientation="portrait"/>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".pelajaranSabtu"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".laporanPiket"
             android:configChanges="orientation"
             android:screenOrientation="portrait"></activity>
     </application>
