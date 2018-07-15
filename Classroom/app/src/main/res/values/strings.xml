@@ -8,6 +8,15 @@
     <string name="piket">Piket</string>
     <string name="laporanPiket">Laporan Piket</string>
     <string name="pelajaran">Pelajaran</string>
+    <string name="hari">Hari</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="automaticDataFill">Isi data otomatis</string>
+    <string name="manualDataFill">Isi data manual</string>
+    <string name="hintRuangan">Ruangan (contoh: 01)</string>
+    <string name="keteranganKetuntasan">Keterangan Ketuntasan</string>
+    <string name="hintKeteranganTambahan">Keterangan Tambahan</string>
+    <string name="kirim">Kirim</string>
+    <string name="watermark">Dibuat otomatis oleh Classroom pada</string>
 
     <string-array name="hari">
         <item>Senin</item>
@@ -17,6 +26,23 @@
         <item>Jumat</item>
         <item>Sabtu</item>
     </string-array>
+
+    // Start of penugasan piket
+    <string name="PK1">Menyapu</string>
+    <string name="PK2">Mengepel</string>
+    <string name="PK3">Membersihkan papan tulis</string>
+    <string name="PS1">Pengecekan alat elektronik (AC, Kipas, Projector)</string>
+    <string name="PS2">Tata letak</string>
+    <string name="PS3">Pengembalian sarana dan prasarana</string>
+    <string-array name="penugasanPiket">
+        <item>@string/PK1</item>
+        <item>@string/PK2</item>
+        <item>@string/PK3</item>
+        <item>@string/PS1</item>
+        <item>@string/PS2</item>
+        <item>@string/PS3</item>
+    </string-array>
+    // End of penugasan piket
 
     // Start of Senin
     <string name="senin">Senin</string>

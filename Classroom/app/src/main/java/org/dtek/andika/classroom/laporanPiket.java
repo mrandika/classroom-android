@@ -50,20 +50,43 @@ public class laporanPiket extends AppCompatActivity {
 
         SimpleDateFormat simpleFormat = new SimpleDateFormat("EEEE, dd MMM yyyy.", new Locale("id"));
         final String simpleDateOutput = simpleFormat.format(detailedDate);
+
         data.setText(simpleDateOutput);
 
         kirimLaporan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String done = "✅ ";
-                String notDone = "❌ ";
-                String getHari = hari.getText().toString();
-                String getTanggal = ", pada tanggal"+tanggal.getText().toString()+".";
-                String getRuangan = ruang.getText().toString();
-                String getKeterangan = keteranganTambahan.getText().toString();
+//                String getHari = hari.getText().toString();
+//                String getTanggal = ", pada tanggal"+tanggal.getText().toString()+".";
+//                String getKeterangan = keteranganTambahan.getText().toString();
 
-                if (!getRuangan.isEmpty() && menyapu.isChecked() && mengepel.isChecked() && papanTulis.isChecked() &&
-                        alatElektronik.isChecked() && tataLetak.isChecked() && sarpras.isChecked()) {
+                String getRuangan = ruang.getText().toString();
+
+                if (!getRuangan.isEmpty()) {
+
+                    String done = "✅ ";
+                    String notDone = "❌ ";
+
+                    String statusOfMenyapu = notDone;
+                    String statusOfMengepel = notDone;
+                    String statusOfPapanTulis = notDone;
+                    String statusOfAlatElektronik = notDone;
+                    String statusOfTataLetak = notDone;
+                    String statusOfSarpras = notDone;
+
+                    if (menyapu.isChecked()) {
+                        statusOfMenyapu = done;
+                    } if (mengepel.isChecked()) {
+                        statusOfMengepel = done;
+                    } if (papanTulis.isChecked()) {
+                        statusOfPapanTulis = done;
+                    } if (alatElektronik.isChecked()) {
+                        statusOfAlatElektronik = done;
+                    } if (tataLetak.isChecked()) {
+                        statusOfTataLetak = done;
+                    } if (sarpras.isChecked()) {
+                        statusOfSarpras = done;
+                    }
 
                     final Intent emailIntent = new Intent(Intent.ACTION_SEND);
                     emailIntent.setType("plain/text");
@@ -73,20 +96,19 @@ public class laporanPiket extends AppCompatActivity {
                             "Laporan piket hari "+simpleDateOutput+
                                     " Melaporkan bahwa semua anggota piket telah melakukan kewajibannya untuk Ruang "+getRuangan+".\n\n"+
                                     "Ketuntasan:\n"+
-                                    done+"Menyapu\n"+
-                                    done+"Mengepel\n"+
-                                    done+"Membersihkan papan tulis\n"+
-                                    done+"Mengecek alat elektronik\n"+
-                                    done+"Tata letak\n"+
-                                    done+"Pengembalian sarana dan prasarana\n\n"+
+                                    statusOfMenyapu+"Menyapu\n"+
+                                    statusOfMengepel+"Mengepel\n"+
+                                    statusOfPapanTulis+"Membershikan papan tulis\n"+
+                                    statusOfAlatElektronik+"Pengecekan alat elektronik (AC, Kipas, Projector)\n"+
+                                    statusOfTataLetak+"Tata letak\n"+
+                                    statusOfSarpras+"Pengembalian sarana dan prasarana\n\n"+
                                     "Dibuat otomatis oleh Classroom pada "+detailedDateOutput);
 
                     startActivity(Intent.createChooser(emailIntent, "Kirim Laporan..."));
                 } else {
                     Context context = getApplicationContext();
-                    CharSequence text = "Data belum lengkap atau piket belum tuntas!";
-                    int duration = Toast.LENGTH_SHORT;
-
+                    CharSequence text = "Data belum lengkap! \n\nPeriksa kembali data hari, tanggal, ruangan.";
+                    int duration = Toast.LENGTH_LONG;
                     Toast toast = Toast.makeText(context, text, duration);
                     toast.show();
                 }

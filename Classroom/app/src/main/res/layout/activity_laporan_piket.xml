@@ -37,7 +37,14 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:checked="true"
-                android:text="Isi data otomatis" />
+                android:text="@string/automaticDataFill" />
+
+            <RadioButton
+                android:id="@+id/manualData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/manualDataFill"
+                android:visibility="gone" />
             <TextView
                 android:id="@+id/data"
                 android:layout_width="wrap_content"
@@ -47,7 +54,7 @@
                 android:id="@+id/hari"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Hari"
+                android:hint="@string/hari"
                 android:imeOptions="actionDone"
                 android:inputType="number"
                 android:singleLine="true"
@@ -57,7 +64,7 @@
                 android:id="@+id/tanggal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Tanggal"
+                android:hint="@string/tanggal"
                 android:imeOptions="actionDone"
                 android:inputType="number"
                 android:singleLine="true"
@@ -67,7 +74,7 @@
                 android:id="@+id/ruang"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Ruangan (contoh: 01)"
+                android:hint="@string/hintRuangan"
                 android:imeOptions="actionDone"
                 android:inputType="number"
                 android:singleLine="true" />
@@ -77,43 +84,43 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="20dp"
                 android:layout_marginBottom="5dp"
-                android:text="Keterangan Ketuntasan" />
+                android:text="@string/keteranganKetuntasan" />
             <CheckBox
                 android:id="@+id/menyapu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Menyapu" />
+                android:text="@string/PK1" />
             <CheckBox
                 android:id="@+id/mengepel"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Mengepel" />
+                android:text="@string/PK2" />
             <CheckBox
                 android:id="@+id/papanTulis"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Membersihkan papan tulis" />
+                android:text="@string/PK3" />
             <CheckBox
                 android:id="@+id/alatElektronik"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pengecekan alat elektronik (AC, Kipas, Projector)" />
+                android:text="@string/PS1" />
             <CheckBox
                 android:id="@+id/tataLetak"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Tata letak" />
+                android:text="@string/PS2" />
             <CheckBox
                 android:id="@+id/sarpras"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Pengembalian sarana dan prasarana" />
+                android:text="@string/PS3" />
 
             <EditText
                 android:id="@+id/keteranganTambahan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Keterangan Tambahan"
+                android:hint="@string/hintKeteranganTambahan"
                 android:imeOptions="actionDone"
                 android:inputType="text"
                 android:singleLine="false"
@@ -122,7 +129,7 @@
                 android:id="@+id/kirimLaporan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Kirim"/>
+                android:text="@string/kirim"/>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
