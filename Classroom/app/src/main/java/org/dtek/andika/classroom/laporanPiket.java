@@ -1,7 +1,9 @@
 package org.dtek.andika.classroom;
 
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.InputType;
@@ -26,8 +28,6 @@ public class laporanPiket extends AppCompatActivity {
 
     @BindView(R.id.automaticData)RadioButton automaticData;
     @BindView(R.id.data)TextView data;
-    @BindView(R.id.hari)EditText hari;
-    @BindView(R.id.tanggal)EditText tanggal;
     @BindView(R.id.ruang)EditText ruang;
     @BindView(R.id.menyapu)CheckBox menyapu;
     @BindView(R.id.mengepel)CheckBox mengepel;
@@ -56,9 +56,6 @@ public class laporanPiket extends AppCompatActivity {
         kirimLaporan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-//                String getHari = hari.getText().toString();
-//                String getTanggal = ", pada tanggal"+tanggal.getText().toString()+".";
-//                String getKeterangan = keteranganTambahan.getText().toString();
 
                 String getRuangan = ruang.getText().toString();
 
@@ -88,23 +85,50 @@ public class laporanPiket extends AppCompatActivity {
                         statusOfSarpras = done;
                     }
 
-                    final Intent emailIntent = new Intent(Intent.ACTION_SEND);
-                    emailIntent.setType("plain/text");
-                    emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"starbhak.rpl2@gmail.com"});
-                    emailIntent.putExtra(Intent.EXTRA_SUBJECT, "[LAPORAN PIKET] XI RPL 2");
-                    emailIntent.putExtra(Intent.EXTRA_TEXT,
-                            "Laporan piket hari "+simpleDateOutput+
-                                    " Melaporkan bahwa semua anggota piket telah melakukan kewajibannya untuk Ruang "+getRuangan+".\n\n"+
-                                    "Ketuntasan:\n"+
-                                    statusOfMenyapu+"Menyapu\n"+
-                                    statusOfMengepel+"Mengepel\n"+
-                                    statusOfPapanTulis+"Membershikan papan tulis\n"+
-                                    statusOfAlatElektronik+"Pengecekan alat elektronik (AC, Kipas, Projector)\n"+
-                                    statusOfTataLetak+"Tata letak\n"+
-                                    statusOfSarpras+"Pengembalian sarana dan prasarana\n\n"+
-                                    "Dibuat otomatis oleh Classroom pada "+detailedDateOutput);
+                    final String emailText = "Laporan piket hari "+simpleDateOutput+
+                            " Melaporkan bahwa semua anggota piket telah melakukan kewajibannya untuk Ruang "+getRuangan+".\n\n"+
+                            "Ketuntasan:\n"+
+                            statusOfMenyapu+"Menyapu\n"+
+                            statusOfMengepel+"Mengepel\n"+
+                            statusOfPapanTulis+"Membershikan papan tulis\n"+
+                            statusOfAlatElektronik+"Pengecekan alat elektronik (AC, Kipas, Projector)\n"+
+                            statusOfTataLetak+"Tata letak\n"+
+                            statusOfSarpras+"Pengembalian sarana dan prasarana\n\n"+
+                            "Dibuat otomatis oleh Classroom pada "+detailedDateOutput;
 
-                    startActivity(Intent.createChooser(emailIntent, "Kirim Laporan..."));
+                    if (!menyapu.isChecked() || !mengepel.isChecked() || !papanTulis.isChecked() || !alatElektronik.isChecked() ||
+                            !tataLetak.isChecked() || !sarpras.isChecked()) {
+                        final AlertDialog.Builder builder = new AlertDialog.Builder(laporanPiket.this)
+                                .setIcon(R.drawable.error)
+                                .setTitle("Peringatan")
+                                .setMessage("Ada tugas piket yang belum tuntas, apa anda tetap ingin mengirim laporan ?")
+                                .setPositiveButton("Kirim", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialogInterface, int i) {
+                                        final Intent emailIntent = new Intent(Intent.ACTION_SEND);
+                                        emailIntent.setType("plain/text");
+                                        emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"starbhak.rpl2@gmail.com"});
+                                        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "[LAPORAN PIKET] XI RPL 2");
+                                        emailIntent.putExtra(Intent.EXTRA_TEXT, emailText);
+                                        startActivity(Intent.createChooser(emailIntent, "Kirim Laporan..."));
+                                    }
+                                })
+                                .setNegativeButton("Tidak", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialogInterface, int i) {
+                                        // Do nothing and close dialog
+                                    }
+                                });
+                        builder.show();
+                    } else {
+                        final Intent emailIntent = new Intent(Intent.ACTION_SEND);
+                        emailIntent.setType("plain/text");
+                        emailIntent.putExtra(Intent.EXTRA_EMAIL, new String[]{"starbhak.rpl2@gmail.com"});
+                        emailIntent.putExtra(Intent.EXTRA_SUBJECT, "[LAPORAN PIKET] XI RPL 2");
+                        emailIntent.putExtra(Intent.EXTRA_TEXT, emailText);
+                        startActivity(Intent.createChooser(emailIntent, "Kirim Laporan..."));
+                    }
+
                 } else {
                     Context context = getApplicationContext();
                     CharSequence text = "Data belum lengkap! \n\nPeriksa kembali data hari, tanggal, ruangan.";

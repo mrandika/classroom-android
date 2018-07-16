@@ -39,36 +39,11 @@
                 android:checked="true"
                 android:text="@string/automaticDataFill" />
 
-            <RadioButton
-                android:id="@+id/manualData"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/manualDataFill"
-                android:visibility="gone" />
             <TextView
                 android:id="@+id/data"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="8dp" />
-            <EditText
-                android:id="@+id/hari"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/hari"
-                android:imeOptions="actionDone"
-                android:inputType="number"
-                android:singleLine="true"
-                android:visibility="gone" />
-
-            <EditText
-                android:id="@+id/tanggal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/tanggal"
-                android:imeOptions="actionDone"
-                android:inputType="number"
-                android:singleLine="true"
-                android:visibility="gone" />
 
             <EditText
                 android:id="@+id/ruang"
