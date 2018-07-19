@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    // Start of Nama Kabinet
+    <string name="namaKabinet">Kabinet Maju</string>
+    <string name="waliKelas">Wali Kelas</string>
+    <string name="ketuaKelas">Ketua Kelas</string>
+    <string name="wakilKetuaKelas">Wakil Ketua Kelas</string>
+    <string name="sekertaris">Sekertaris</string>
+    <string name="bendahara">Bendahara</string>
+    <string name="namaWaliKelas">@string/absen.00</string>
+    <string name="namaKetuaKelas">@string/absen.25</string>
+    <string name="namaWakilKetuaKelas">@string/absen.19</string>
+    <string name="namaSekertaris">@string/absen.11</string>
+    <string name="namaBendahara">Noviardita Ramadhani &amp; Putriana Alfatikasari</string>
+    <string-array name="kabinet">
+        <item>@string/namaKabinet</item>
+        <item>@string/waliKelas</item>
+        <item>@string/ketuaKelas</item>
+        <item>@string/wakilKetuaKelas</item>
+        <item>@string/sekertaris</item>
+        <item>@string/bendahara</item>
+        <item>@string/namaWaliKelas</item>
+        <item>@string/namaKetuaKelas</item>
+        <item>@string/namaWakilKetuaKelas</item>
+        <item>@string/namaSekertaris</item>
+        <item>@string/namaBendahara</item>
+    </string-array>
+    // End of Nama Kabinet
+
+    // Start of Absen
+    <string name="absen.00">Rosa Anggraeni S.pd</string>
+    <string name="absen.01">Aditya Augustaf</string>
+    <string name="absen.02">Akmal Nadif</string>
+    <string name="absen.03">Aqli Hamdan</string>
+    <string name="absen.04">Ardian Figo</string>
+    <string name="absen.05">Asmaul Sufarhansyah</string>
+    <string name="absen.06">Diantama Maulana</string>
+    <string name="absen.07">Eki Lanjar Syabani</string>
+    <string name="absen.08">Fajar Julianto</string>
+    <string name="absen.09">Farhan Hasbiy</string>
+    <string name="absen.10">Fandi Arya P.</string>
+    <string name="absen.11">Fitriyani Gita Tabila</string>
+    <string name="absen.12">Imam Mardani</string>
+    <string name="absen.13">Istiq Harun K. M.</string>
+    <string name="absen.14">Kemas M. Rafli</string>
+    <string name="absen.15">Kevin Surya Augusto</string>
+    <string name="absen.16">Luthfi Ali Qodri</string>
+    <string name="absen.17">Maulana Yusuf</string>
+    <string name="absen.18">M. Hadyan Amrillah</string>
+    <string name="absen.19">M. Riztaffa Firli</string>
+    <string name="absen.20">M. Syaiful Iskandar</string>
+    <string name="absen.21">M. Alkausar Ramadhan</string>
+    <string name="absen.22">M. Fatah Hidayat</string>
+    <string name="absen.23">M. Hikmal Ramadhani</string>
+    <string name="absen.24">M. Muhyi Rasyidin</string>
+    <string name="absen.25">M. Rizki Andika</string>
+    <string name="absen.26">Nabil Arfian</string>
+    <string name="absen.27">Natasya Pramudita L.</string>
+    <string name="absen.28">Noviardita Ramadhani</string>
+    <string name="absen.29">Pramudya Satrio B.</string>
+    <string name="absen.30">Putriana Alfatikasari</string>
+    <string name="absen.31">Rheza Ardhiva</string>
+    <string name="absen.32">Riki Kusworo</string>
+    <string name="absen.33">Rizki Fadilla</string>
+    <string name="absen.34">Rizky Surya</string>
+    <string name="absen.35">Sigit Andreas</string>
+    // End of Absen
+
+    // Start of penugasan piket
+    <string name="PK1">Menyapu</string>
+    <string name="PK2">Mengepel</string>
+    <string name="PK3">Membersihkan papan tulis</string>
+    <string name="PS1">Pengecekan alat elektronik (AC, Kipas, Projector)</string>
+    <string name="PS2">Tata letak</string>
+    <string name="PS3">Pengembalian sarana dan prasarana</string>
+    <string-array name="penugasanPiket">
+        <item>@string/PK1</item>
+        <item>@string/PK2</item>
+        <item>@string/PK3</item>
+        <item>@string/PS1</item>
+        <item>@string/PS2</item>
+        <item>@string/PS3</item>
+    </string-array>
+    // End of penugasan piket
+
+    // Start of Senin
+    <string name="senin">Senin</string>
+    <string name="pelajaran.senin">Pelajaran Senin</string>
+    <string name="piket.senin">Piket Senin</string>
+    <string name="piket.senin1">@string/absen.05</string>
+    <string name="piket.senin2">@string/absen.21</string>
+    <string name="piket.senin3">@string/absen.14</string>
+    <string name="piket.senin4">@string/absen.03</string>
+    <string name="piket.senin5">@string/absen.02</string>
+    <string name="piket.senin6">@string/absen.35</string>
+    <!--<string name="piket.senin1">@string/absen.01</string>-->
+    <!--<string name="piket.senin2">@string/absen.02</string>-->
+    <!--<string name="piket.senin3">@string/absen.03</string>-->
+    <!--<string name="piket.senin4">@string/absen.04</string>-->
+    <!--<string name="piket.senin5">@string/absen.05</string>-->
+    <!--<string name="piket.senin6">@string/absen.06</string>-->
+    <!--<string name="piket.senin7">@string/absen.07</string>-->
+    <string-array name="senin">
+        <item>@string/senin</item>
+        <item>@string/pelajaran.senin</item>
+        <item>@string/piket.senin</item>
+        <item>@string/piket.senin1</item>
+        <item>@string/piket.senin2</item>
+        <item>@string/piket.senin3</item>
+        <item>@string/piket.senin4</item>
+        <item>@string/piket.senin5</item>
+        <item>@string/piket.senin6</item>
+        <!--<item>@string/piket.senin7</item>-->
+    </string-array>
+    // End of Senin
+
+    // Start of Selasa
+    <string name="selasa">Selasa</string>
+    <string name="pelajaran.selasa">Pelajaran Selasa</string>
+    <string name="piket.selasa">Piket Selasa</string>
+    <string name="piket.selasa1">@string/absen.12</string>
+    <string name="piket.selasa2">@string/absen.34</string>
+    <string name="piket.selasa3">@string/absen.30</string>
+    <string name="piket.selasa4">@string/absen.18</string>
+    <string name="piket.selasa5">@string/absen.31</string>
+    <string name="piket.selasa6">@string/absen.17</string>
+    <!--<string name="piket.senin1">@string/absen.08</string>-->
+    <!--<string name="piket.senin2">@string/absen.09</string>-->
+    <!--<string name="piket.senin3">@string/absen.10</string>-->
+    <!--<string name="piket.senin4">@string/absen.11</string>-->
+    <!--<string name="piket.senin5">@string/absen.12</string>-->
+    <!--<string name="piket.senin6">@string/absen.13</string>-->
+    <!--<string name="piket.senin7">@string/absen.14</string>-->
+    <string-array name="selasa">
+        <item>@string/selasa</item>
+        <item>@string/pelajaran.selasa</item>
+        <item>@string/piket.selasa</item>
+        <item>@string/piket.selasa1</item>
+        <item>@string/piket.selasa2</item>
+        <item>@string/piket.selasa3</item>
+        <item>@string/piket.selasa4</item>
+        <item>@string/piket.selasa5</item>
+        <item>@string/piket.selasa6</item>
+        <!--<item>@string/piket.selasa7</item>-->
+    </string-array>
+    // End of Selasa
+
+    // Start of Rabu
+    <string name="rabu">Rabu</string>
+    <string name="pelajaran.rabu">Pelajaran Rabu</string>
+    <string name="piket.rabu">Piket Rabu</string>
+    <string name="piket.rabu1">@string/absen.01</string>
+    <string name="piket.rabu2">@string/absen.26</string>
+    <string name="piket.rabu3">@string/absen.20</string>
+    <string name="piket.rabu4">@string/absen.27</string>
+    <string name="piket.rabu5">@string/absen.33</string>
+    <string name="piket.rabu6">@string/absen.13</string>
+    <!--<string name="piket.senin1">@string/absen.15</string>-->
+    <!--<string name="piket.senin2">@string/absen.16</string>-->
+    <!--<string name="piket.senin3">@string/absen.17</string>-->
+    <!--<string name="piket.senin4">@string/absen.18</string>-->
+    <!--<string name="piket.senin5">@string/absen.19</string>-->
+    <!--<string name="piket.senin6">@string/absen.20</string>-->
+    <!--<string name="piket.senin7">@string/absen.21</string>-->
+    <string-array name="rabu">
+        <item>@string/rabu</item>
+        <item>@string/pelajaran.rabu</item>
+        <item>@string/piket.rabu</item>
+        <item>@string/piket.rabu1</item>
+        <item>@string/piket.rabu2</item>
+        <item>@string/piket.rabu3</item>
+        <item>@string/piket.rabu4</item>
+        <item>@string/piket.rabu5</item>
+        <item>@string/piket.rabu6</item>
+        <!--<item>@string/piket.rabu7</item>-->
+    </string-array>
+    // End of Rabu
+
+    // Start of Kamis
+    <string name="kamis">Kamis</string>
+    <string name="pelajaran.kamis">Pelajaran Kamis</string>
+    <string name="piket.kamis">Piket Kamis</string>
+    <string name="piket.kamis1">@string/absen.23</string>
+    <string name="piket.kamis2">@string/absen.06</string>
+    <string name="piket.kamis3">@string/absen.22</string>
+    <string name="piket.kamis4">@string/absen.25</string>
+    <string name="piket.kamis5">@string/absen.07</string>
+    <string name="piket.kamis6">@string/absen.11</string>
+    <!--<string name="piket.senin1">@string/absen.22</string>-->
+    <!--<string name="piket.senin2">@string/absen.23</string>-->
+    <!--<string name="piket.senin3">@string/absen.24</string>-->
+    <!--<string name="piket.senin4">@string/absen.25</string>-->
+    <!--<string name="piket.senin5">@string/absen.26</string>-->
+    <!--<string name="piket.senin6">@string/absen.27</string>-->
+    <!--<string name="piket.senin7">@string/absen.28</string>-->
+    <string-array name="kamis">
+        <item>@string/kamis</item>
+        <item>@string/pelajaran.kamis</item>
+        <item>@string/piket.kamis</item>
+        <item>@string/piket.kamis1</item>
+        <item>@string/piket.kamis2</item>
+        <item>@string/piket.kamis3</item>
+        <item>@string/piket.kamis4</item>
+        <item>@string/piket.kamis5</item>
+        <item>@string/piket.kamis6</item>
+        <!--<item>@string/piket.kamis7</item>-->
+    </string-array>
+    // End of Kamis
+
+    // Start of Jumat
+    <string name="jumat">Jumat</string>
+    <string name="pelajaran.jumat">Pelajaran Jumat</string>
+    <string name="piket.jumat">Piket Jumat</string>
+    <string name="piket.jumat1">@string/absen.32</string>
+    <string name="piket.jumat2">@string/absen.24</string>
+    <string name="piket.jumat3">@string/absen.10</string>
+    <string name="piket.jumat4">@string/absen.29</string>
+    <string name="piket.jumat5">@string/absen.09</string>
+    <string name="piket.jumat6">@string/absen.15</string>
+    <!--<string name="piket.senin1">@string/absen.29</string>-->
+    <!--<string name="piket.senin2">@string/absen.30</string>-->
+    <!--<string name="piket.senin3">@string/absen.31</string>-->
+    <!--<string name="piket.senin4">@string/absen.32</string>-->
+    <!--<string name="piket.senin5">@string/absen.33</string>-->
+    <!--<string name="piket.senin6">@string/absen.34</string>-->
+    <!--<string name="piket.senin7">@string/absen.35</string>-->
+    <string-array name="jumat">
+        <item>@string/jumat</item>
+        <item>@string/pelajaran.jumat</item>
+        <item>@string/piket.jumat</item>
+        <item>@string/piket.jumat1</item>
+        <item>@string/piket.jumat2</item>
+        <item>@string/piket.jumat3</item>
+        <item>@string/piket.jumat4</item>
+        <item>@string/piket.jumat5</item>
+        <item>@string/piket.jumat6</item>
+        <!--<item>@string/piket.jumat7</item>-->
+    </string-array>
+    // End of Jumat
+
+    // Start of Sabtu
+    <string name="sabtu">Sabtu</string>
+    <string name="pelajaran.sabtu">Pelajaran Sabtu</string>
+    <string name="piket.sabtu">Piket Sabtu</string>
+    <string name="piket.sabtu1">@string/absen.16</string>
+    <string name="piket.sabtu2">@string/absen.28</string>
+    <string name="piket.sabtu3">@string/absen.04</string>
+    <string name="piket.sabtu4">@string/absen.08</string>
+    <string name="piket.sabtu5">@string/absen.19</string>
+    <string name="jadwalPiket">Jadwal Piket</string>
+    <string name="jadwalPelajaran">Jadwal Pelajaran</string>
+    <string-array name="sabtu">
+        <item>@string/sabtu</item>
+        <item>@string/pelajaran.sabtu</item>
+        <item>@string/piket.sabtu</item>
+        <item>@string/piket.sabtu1</item>
+        <item>@string/piket.sabtu2</item>
+        <item>@string/piket.sabtu3</item>
+        <item>@string/piket.sabtu4</item>
+        <item>@string/piket.sabtu5</item>
+    </string-array>
+</resources>

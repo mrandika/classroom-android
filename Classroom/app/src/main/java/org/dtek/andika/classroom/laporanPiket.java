@@ -26,7 +26,6 @@ import butterknife.ButterKnife;
 
 public class laporanPiket extends AppCompatActivity {
 
-    @BindView(R.id.automaticData)RadioButton automaticData;
     @BindView(R.id.data)TextView data;
     @BindView(R.id.ruang)EditText ruang;
     @BindView(R.id.menyapu)CheckBox menyapu;
@@ -35,7 +34,6 @@ public class laporanPiket extends AppCompatActivity {
     @BindView(R.id.alatElektronik)CheckBox alatElektronik;
     @BindView(R.id.tataLetak)CheckBox tataLetak;
     @BindView(R.id.sarpras)CheckBox sarpras;
-    @BindView(R.id.keteranganTambahan)EditText keteranganTambahan;
     @BindView(R.id.kirimLaporan)Button kirimLaporan;
 
     @Override

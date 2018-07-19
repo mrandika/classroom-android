@@ -13,15 +13,17 @@
         android:layout_weight="2"
         android:layout_width="match_parent"
         android:layout_height="0dp">
+
         <TextView
-            android:id="@+id/appname"
+            android:id="@+id/pelajaranSelasa"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
             android:text="@string/pelajaran.selasa"
-            android:textSize="30sp"
-            android:textStyle="bold"
+            android:textAlignment="center"
             android:textColor="@android:color/white"
-            android:layout_centerInParent="true">
+            android:textSize="30sp"
+            android:textStyle="bold">
         </TextView>
     </RelativeLayout>
 
@@ -67,8 +69,26 @@
                     android:layout_marginBottom="10dp"
                     android:background="@android:color/darker_gray" />
                 <TextView
-                    android:layout_gravity="bottom"
-                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="@string/pelajaran"
+                    android:textColor="@android:color/black"/>
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="10dp"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="@string/pelajaran"
+                    android:textColor="@android:color/black"/>
+                <TextView
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
                     android:textSize="18sp"
@@ -85,8 +105,8 @@
                     android:text="@string/pelajaran"
                     android:textColor="@android:color/black"/>
                 <TextView
-                    android:layout_gravity="bottom"
-                    android:layout_width="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
                     android:textSize="18sp"
@@ -95,7 +115,7 @@
                     android:textColor="@android:color/black"/>
                 <TextView
                     android:layout_gravity="bottom"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
                     android:textSize="18sp"
@@ -104,7 +124,7 @@
                     android:textColor="@android:color/black"/>
                 <TextView
                     android:layout_gravity="bottom"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
                     android:textSize="18sp"
@@ -113,7 +133,7 @@
                     android:textColor="@android:color/black"/>
                 <TextView
                     android:layout_gravity="bottom"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
                     android:textSize="18sp"
@@ -122,7 +142,7 @@
                     android:textColor="@android:color/black"/>
                 <TextView
                     android:layout_gravity="bottom"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
                     android:textSize="18sp"
@@ -131,25 +151,7 @@
                     android:textColor="@android:color/black"/>
                 <TextView
                     android:layout_gravity="bottom"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="10dp"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:text="@string/pelajaran"
-                    android:textColor="@android:color/black"/>
-                <TextView
-                    android:layout_gravity="bottom"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingBottom="10dp"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
-                    android:text="@string/pelajaran"
-                    android:textColor="@android:color/black"/>
-                <TextView
-                    android:layout_gravity="bottom"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
                     android:textSize="18sp"
@@ -194,7 +196,7 @@
                     android:background="@android:color/darker_gray" />
                 <TextView
                     android:layout_gravity="center"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
                     android:textSize="18sp"
@@ -203,7 +205,7 @@
                     android:textColor="@android:color/black"/>
                 <TextView
                     android:layout_gravity="center"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
                     android:textSize="18sp"
@@ -212,7 +214,7 @@
                     android:textColor="@android:color/black"/>
                 <TextView
                     android:layout_gravity="center"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
                     android:textSize="18sp"
@@ -221,7 +223,7 @@
                     android:textColor="@android:color/black"/>
                 <TextView
                     android:layout_gravity="center"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
                     android:textSize="18sp"
@@ -230,7 +232,7 @@
                     android:textColor="@android:color/black"/>
                 <TextView
                     android:layout_gravity="center"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
                     android:textSize="18sp"
@@ -239,7 +241,7 @@
                     android:textColor="@android:color/black"/>
                 <TextView
                     android:layout_gravity="center"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
                     android:textSize="18sp"
@@ -248,7 +250,7 @@
                     android:textColor="@android:color/black"/>
                 <TextView
                     android:layout_gravity="center"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
                     android:textSize="18sp"
@@ -257,7 +259,7 @@
                     android:textColor="@android:color/black"/>
                 <TextView
                     android:layout_gravity="center"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
                     android:textSize="18sp"
@@ -266,7 +268,7 @@
                     android:textColor="@android:color/black"/>
                 <TextView
                     android:layout_gravity="center"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
                     android:textSize="18sp"
@@ -275,7 +277,7 @@
                     android:textColor="@android:color/black"/>
                 <TextView
                     android:layout_gravity="center"
-                    android:layout_width="wrap_content"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:paddingBottom="10dp"
                     android:textSize="18sp"

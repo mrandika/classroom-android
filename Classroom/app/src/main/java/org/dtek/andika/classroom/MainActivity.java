@@ -1,10 +1,14 @@
 package org.dtek.andika.classroom;
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.os.Build;
 import android.preference.PreferenceManager;
+import android.provider.Settings;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -40,10 +44,30 @@ public class MainActivity extends AppCompatActivity {
         final String appID = BuildConfig.APPLICATION_ID;
         super.onCreate(savedInstanceState);
 
-        AppUpdater appUpdater = new AppUpdater(this)
-                .setUpdateFrom(UpdateFrom.GITHUB)
-                .setGitHubUserAndRepo("mrandika", "classroom-android");
-        appUpdater.start();
+        if (isNetworkAvailable()) {
+            AppUpdater appUpdater = new AppUpdater(this)
+                    .setUpdateFrom(UpdateFrom.GITHUB)
+                    .setGitHubUserAndRepo("mrandika", "classroom-android");
+            appUpdater.start();
+        } else {
+            final AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this)
+                    .setIcon(R.drawable.connectionerror)
+                    .setTitle("Hmm...")
+                    .setMessage("Tidak ada koneksi Internet! koneksi diperlukan untuk memeriksa pembaruan, coba sambungkan ke Internet atau coba menggunakan Offline Mode!")
+                    .setPositiveButton("Pengaturan", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            startActivityForResult(new Intent(Settings.ACTION_WIRELESS_SETTINGS), 0);
+                        }
+                    })
+                    .setNegativeButton("Offline Mode", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            // Do nothing and close dialog
+                        }
+                    });
+            builder.show();
+        }
 
         final SharedPreferences prefs = PreferenceManager
                 .getDefaultSharedPreferences(this);
@@ -118,34 +142,40 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 if ((appVersion.contains("DEBUG") || (appVersion.contains("BETA") || (appVersion.contains("ALPHA"))))) {
                     final Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
+                    final String emailText = "[Informasi Pengguna dan Perangkat]\n"
+                            +"Nama Pengguna: " + userName + "\n"
+                            + "ID Aplikasi: " + appID + "\n"
+                            + "Versi Aplikasi: " + appVersion + "\n"
+                            + "Perangkat: " + deviceBrand + " - " + deviceModel + "\n"
+                            + "Versi Android: " + deviceVersion + "\n\n"+"[Kolom Feedback Pengguna]\n\n";
                     emailIntent.setType("plain/text");
                     emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"mrizkiandika226@gmail.com"});
                     emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "[FEEDBACK Beta] Aplikasi Classroom");
-                    emailIntent.putExtra(Intent.EXTRA_TEXT,
-                            "[Informasi Pengguna dan Perangkat]\n"
-                                    +"Nama Pengguna: " + userName + "\n"
-                                    + "ID Aplikasi: " + appID + "\n"
-                                    + "Versi Aplikasi: " + appVersion + "\n"
-                                    + "Perangkat: " + deviceBrand + " - " + deviceModel + "\n"
-                                    + "Versi Android: " + deviceVersion + "\n\n"+"[Kolom Feedback Pengguna]\n\n");
+                    emailIntent.putExtra(Intent.EXTRA_TEXT, emailText);
 
                     startActivity(Intent.createChooser(emailIntent, "Kirim Feedback..."));
                 } else {
                     final Intent emailIntent = new Intent(android.content.Intent.ACTION_SEND);
+                    final String emailText = "[Informasi Pengguna dan Perangkat]\n"
+                            +"Nama Pengguna: " + userName + "\n"
+                            + "ID Aplikasi: " + appID + "\n"
+                            + "Versi Aplikasi: " + appVersion + "\n"
+                            + "Perangkat: " + deviceBrand + " - " + deviceModel + "\n"
+                            + "Versi Android: " + deviceVersion + "\n\n"+"[Kolom Saran Pengguna]\n\n";
                     emailIntent.setType("plain/text");
                     emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL, new String[]{"mrizkiandika226@gmail.com"});
                     emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "[SARAN] Aplikasi Classroom");
-                    emailIntent.putExtra(Intent.EXTRA_TEXT,
-                            "[Informasi Pengguna dan Perangkat]\n"
-                                    +"Nama Pengguna: " + userName + "\n"
-                                    + "ID Aplikasi: " + appID + "\n"
-                                    + "Versi Aplikasi: " + appVersion + "\n"
-                                    + "Perangkat: " + deviceBrand + " - " + deviceModel + "\n"
-                                    + "Versi Android: " + deviceVersion + "\n\n"+"[Kolom Saran Pengguna]\n\n");
+                    emailIntent.putExtra(Intent.EXTRA_TEXT, emailText);
 
                     startActivity(Intent.createChooser(emailIntent, "Kirim Saran..."));
                 }
             }
         });
+    }
+    private boolean isNetworkAvailable() {
+        ConnectivityManager connectivityManager
+                = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        return activeNetworkInfo != null && activeNetworkInfo.isConnected();
     }
 }

@@ -13,11 +13,12 @@
         android:id="@+id/unggahLaporan"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="top|right"
+        android:layout_gravity="end"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
         android:layout_marginTop="10dp"
-        android:src="@drawable/unggahlaporan" />
+        android:src="@drawable/unggahlaporan"
+        tools:ignore="ContentDescription" />
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -25,13 +26,14 @@
         android:layout_weight="2">
 
         <TextView
-            android:id="@+id/appname"
+            android:id="@+id/jadwalPiket"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15dp"
-            android:text="Jadwal Piket"
+            android:text="@string/jadwalPiket"
+            android:textAlignment="center"
             android:textColor="@android:color/white"
             android:textSize="30sp"
             android:textStyle="bold">
@@ -58,6 +60,7 @@
             android:layout_marginRight="16dp"
             android:layout_rowWeight="1"
             android:clickable="true"
+            android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp">
@@ -92,6 +95,7 @@
             android:layout_marginRight="16dp"
             android:layout_rowWeight="1"
             android:clickable="true"
+            android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp">
@@ -125,6 +129,7 @@
             android:layout_marginRight="16dp"
             android:layout_rowWeight="1"
             android:clickable="true"
+            android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp">
@@ -158,6 +163,7 @@
             android:layout_marginRight="16dp"
             android:layout_rowWeight="1"
             android:clickable="true"
+            android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp">
@@ -191,6 +197,7 @@
             android:layout_marginRight="16dp"
             android:layout_rowWeight="1"
             android:clickable="true"
+            android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp">
@@ -224,6 +231,7 @@
             android:layout_marginRight="16dp"
             android:layout_rowWeight="1"
             android:clickable="true"
+            android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground"
             app:cardCornerRadius="8dp"
             app:cardElevation="8dp">

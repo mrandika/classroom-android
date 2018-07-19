@@ -11,15 +11,17 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
         android:layout_marginBottom="50dp">
+
         <TextView
-            android:id="@+id/appname"
+            android:id="@+id/laporanPiket"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
             android:text="@string/laporanPiket"
-            android:textSize="30sp"
-            android:textStyle="bold"
+            android:textAlignment="center"
             android:textColor="@android:color/black"
-            android:layout_centerInParent="true"/>
+            android:textSize="30sp"
+            android:textStyle="bold" />
     </RelativeLayout>
 
     <ScrollView
@@ -32,18 +34,21 @@
             android:orientation="vertical"
             android:layout_marginLeft="5dp"
             android:layout_marginRight="5dp">
-            <RadioButton
-                android:id="@+id/automaticData"
+
+            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:checked="true"
-                android:text="@string/automaticDataFill" />
+                android:layout_marginLeft="8dp"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:text="Pengisian data untuk:"/>
 
             <TextView
                 android:id="@+id/data"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginLeft="8dp" />
+                android:layout_marginLeft="8dp"
+                android:textStyle="bold" />
 
             <EditText
                 android:id="@+id/ruang"
@@ -90,16 +95,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/PS3" />
-
-            <EditText
-                android:id="@+id/keteranganTambahan"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:hint="@string/hintKeteranganTambahan"
-                android:imeOptions="actionDone"
-                android:inputType="text"
-                android:singleLine="false"
-                android:visibility="gone" />
             <Button
                 android:id="@+id/kirimLaporan"
                 android:layout_width="match_parent"

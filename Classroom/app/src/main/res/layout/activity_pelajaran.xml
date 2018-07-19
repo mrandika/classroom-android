@@ -13,15 +13,17 @@
         android:layout_weight="2"
         android:layout_width="match_parent"
         android:layout_height="0dp">
+
         <TextView
-            android:id="@+id/appname"
+            android:id="@+id/jadwalPelajaran"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Jadwal Pelajaran"
-            android:textSize="30sp"
-            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:text="@string/jadwalPelajaran"
+            android:textAlignment="center"
             android:textColor="@android:color/white"
-            android:layout_centerInParent="true">
+            android:textSize="30sp"
+            android:textStyle="bold">
         </TextView>
     </RelativeLayout>
 
@@ -47,6 +49,7 @@
             app:cardElevation="8dp"
             app:cardCornerRadius="8dp"
             android:clickable="true"
+            android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground">
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -54,14 +57,16 @@
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_margin="16dp"
                 android:orientation="vertical">
+
                 <TextView
-                    android:layout_gravity="bottom"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
+                    android:layout_gravity="bottom"
                     android:text="@string/senin"
-                    android:textColor="@android:color/black"/>
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
         <!--KOLOM 1 - ROW 1-->
@@ -79,6 +84,7 @@
             app:cardElevation="8dp"
             app:cardCornerRadius="8dp"
             android:clickable="true"
+            android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground">
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -86,13 +92,15 @@
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_margin="16dp"
                 android:orientation="vertical">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
                     android:text="@string/selasa"
-                    android:textColor="@android:color/black"/>
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
         <!--KOLOM 1 - ROW 2-->
@@ -110,6 +118,7 @@
             app:cardElevation="8dp"
             app:cardCornerRadius="8dp"
             android:clickable="true"
+            android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground">
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -117,13 +126,15 @@
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_margin="16dp"
                 android:orientation="vertical">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
                     android:text="@string/rabu"
-                    android:textColor="@android:color/black"/>
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
         <!--KOLOM 1 - ROW 3-->
@@ -141,6 +152,7 @@
             app:cardElevation="8dp"
             app:cardCornerRadius="8dp"
             android:clickable="true"
+            android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground">
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -148,13 +160,15 @@
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_margin="16dp"
                 android:orientation="vertical">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
                     android:text="@string/kamis"
-                    android:textColor="@android:color/black"/>
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
         <!--KOLOM 1 - ROW 4-->
@@ -172,6 +186,7 @@
             app:cardElevation="8dp"
             app:cardCornerRadius="8dp"
             android:clickable="true"
+            android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground">
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -179,13 +194,15 @@
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_margin="16dp"
                 android:orientation="vertical">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
                     android:text="@string/jumat"
-                    android:textColor="@android:color/black"/>
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
         <!--KOLOM 1 - ROW 5-->
@@ -203,6 +220,7 @@
             app:cardElevation="8dp"
             app:cardCornerRadius="8dp"
             android:clickable="true"
+            android:focusable="true"
             android:foreground="?android:attr/selectableItemBackground">
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -210,13 +228,15 @@
                 android:layout_gravity="center_horizontal|center_vertical"
                 android:layout_margin="16dp"
                 android:orientation="vertical">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textSize="18sp"
-                    android:textStyle="bold"
                     android:text="@string/sabtu"
-                    android:textColor="@android:color/black"/>
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
             </LinearLayout>
         </android.support.v7.widget.CardView>
         <!--KOLOM 1 - ROW 6-->
