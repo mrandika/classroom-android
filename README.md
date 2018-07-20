@@ -1,2 +1,2 @@
-# classroom-android
-Classroom project for Android operating system. Require API 21 or greater.
+# Classroom for Android
+Classroom project for Android operating system. Require API 23 (Marshmallow) or greater.
