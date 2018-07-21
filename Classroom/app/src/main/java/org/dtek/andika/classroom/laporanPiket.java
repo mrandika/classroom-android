@@ -59,8 +59,8 @@ public class laporanPiket extends AppCompatActivity {
 
                 if (!getRuangan.isEmpty()) {
 
-                    String done = "✅ ";
-                    String notDone = "❌ ";
+                    final String done = "✅ ";
+                    final String notDone = "❌ ";
 
                     String statusOfMenyapu = notDone;
                     String statusOfMengepel = notDone;
@@ -129,7 +129,7 @@ public class laporanPiket extends AppCompatActivity {
 
                 } else {
                     Context context = getApplicationContext();
-                    CharSequence text = "Data belum lengkap! \n\nPeriksa kembali data hari, tanggal, ruangan.";
+                    CharSequence text = "Data belum lengkap! \n\nPeriksa kembali data hari, tanggal, dan ruangan.";
                     int duration = Toast.LENGTH_LONG;
                     Toast toast = Toast.makeText(context, text, duration);
                     toast.show();

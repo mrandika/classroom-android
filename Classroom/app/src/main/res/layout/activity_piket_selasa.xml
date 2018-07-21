@@ -60,7 +60,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:text="@string/absen.08"
+                    android:text="@string/piket.selasa1"
                     android:textColor="@android:color/black"/>
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -89,7 +89,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:text="@string/absen.09"
+                    android:text="@string/piket.selasa2"
                     android:textColor="@android:color/black"/>
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -118,7 +118,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:text="@string/absen.10"
+                    android:text="@string/piket.selasa3"
                     android:textColor="@android:color/black"/>
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -147,7 +147,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:text="@string/absen.11"
+                    android:text="@string/piket.selasa4"
                     android:textColor="@android:color/black"/>
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -176,7 +176,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:text="@string/absen.12"
+                    android:text="@string/piket.selasa5"
                     android:textColor="@android:color/black"/>
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -205,7 +205,7 @@
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:text="@string/absen.13"
+                    android:text="@string/piket.selasa6"
                     android:textColor="@android:color/black"/>
             </LinearLayout>
         </android.support.v7.widget.CardView>
@@ -222,7 +222,8 @@
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             app:cardElevation="8dp"
-            app:cardCornerRadius="8dp">
+            app:cardCornerRadius="8dp"
+            android:visibility="gone">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -234,216 +235,11 @@
                     android:layout_height="wrap_content"
                     android:textSize="18sp"
                     android:textStyle="bold"
-                    android:text="@string/absen.14"
+                    android:text="@string/piket.senin6"
                     android:textColor="@android:color/black"/>
             </LinearLayout>
         </android.support.v7.widget.CardView>
         <!--KOLOM 1 - ROW 7-->
-
-        <!--&lt;!&ndash;KOLOM 1 - ROW 1&ndash;&gt;-->
-        <!--<android.support.v7.widget.CardView-->
-            <!--android:id="@+id/piketcardSelasa1"-->
-            <!--android:layout_height="0dp"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_columnWeight="1"-->
-            <!--android:layout_rowWeight="1"-->
-            <!--android:layout_marginBottom="16dp"-->
-            <!--android:layout_marginLeft="16dp"-->
-            <!--android:layout_marginRight="16dp"-->
-            <!--app:cardElevation="8dp"-->
-            <!--app:cardCornerRadius="8dp">-->
-            <!--<LinearLayout-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="center_horizontal|center_vertical"-->
-                <!--android:layout_margin="16dp"-->
-                <!--android:orientation="vertical">-->
-                <!--<TextView-->
-                    <!--android:layout_gravity="bottom"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:textSize="18sp"-->
-                    <!--android:textStyle="bold"-->
-                    <!--android:text="@string/piket.selasa1"-->
-                    <!--android:textColor="@android:color/black"/>-->
-            <!--</LinearLayout>-->
-        <!--</android.support.v7.widget.CardView>-->
-        <!--&lt;!&ndash;KOLOM 1 - ROW 1&ndash;&gt;-->
-
-        <!--&lt;!&ndash;KOLOM 1 - ROW 2&ndash;&gt;-->
-        <!--<android.support.v7.widget.CardView-->
-            <!--android:id="@+id/piketcardSelasa2"-->
-            <!--android:layout_height="0dp"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_columnWeight="1"-->
-            <!--android:layout_rowWeight="1"-->
-            <!--android:layout_marginBottom="16dp"-->
-            <!--android:layout_marginLeft="16dp"-->
-            <!--android:layout_marginRight="16dp"-->
-            <!--app:cardElevation="8dp"-->
-            <!--app:cardCornerRadius="8dp">-->
-            <!--<LinearLayout-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="center_horizontal|center_vertical"-->
-                <!--android:layout_margin="16dp"-->
-                <!--android:orientation="vertical">-->
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:textSize="18sp"-->
-                    <!--android:textStyle="bold"-->
-                    <!--android:text="@string/piket.selasa2"-->
-                    <!--android:textColor="@android:color/black"/>-->
-            <!--</LinearLayout>-->
-        <!--</android.support.v7.widget.CardView>-->
-        <!--&lt;!&ndash;KOLOM 1 - ROW 2&ndash;&gt;-->
-
-        <!--&lt;!&ndash;KOLOM 1 - ROW 3&ndash;&gt;-->
-        <!--<android.support.v7.widget.CardView-->
-            <!--android:id="@+id/piketcardSelasa3"-->
-            <!--android:layout_height="0dp"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_columnWeight="1"-->
-            <!--android:layout_rowWeight="1"-->
-            <!--android:layout_marginBottom="16dp"-->
-            <!--android:layout_marginLeft="16dp"-->
-            <!--android:layout_marginRight="16dp"-->
-            <!--app:cardElevation="8dp"-->
-            <!--app:cardCornerRadius="8dp">-->
-            <!--<LinearLayout-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="center_horizontal|center_vertical"-->
-                <!--android:layout_margin="16dp"-->
-                <!--android:orientation="vertical">-->
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:textSize="18sp"-->
-                    <!--android:textStyle="bold"-->
-                    <!--android:text="@string/piket.selasa3"-->
-                    <!--android:textColor="@android:color/black"/>-->
-            <!--</LinearLayout>-->
-        <!--</android.support.v7.widget.CardView>-->
-        <!--&lt;!&ndash;KOLOM 1 - ROW 3&ndash;&gt;-->
-
-        <!--&lt;!&ndash;KOLOM 1 - ROW 4&ndash;&gt;-->
-        <!--<android.support.v7.widget.CardView-->
-            <!--android:id="@+id/piketcardSelasa4"-->
-            <!--android:layout_height="0dp"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_columnWeight="1"-->
-            <!--android:layout_rowWeight="1"-->
-            <!--android:layout_marginBottom="16dp"-->
-            <!--android:layout_marginLeft="16dp"-->
-            <!--android:layout_marginRight="16dp"-->
-            <!--app:cardElevation="8dp"-->
-            <!--app:cardCornerRadius="8dp">-->
-            <!--<LinearLayout-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="center_horizontal|center_vertical"-->
-                <!--android:layout_margin="16dp"-->
-                <!--android:orientation="vertical">-->
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:textSize="18sp"-->
-                    <!--android:textStyle="bold"-->
-                    <!--android:text="@string/piket.selasa4"-->
-                    <!--android:textColor="@android:color/black"/>-->
-            <!--</LinearLayout>-->
-        <!--</android.support.v7.widget.CardView>-->
-        <!--&lt;!&ndash;KOLOM 1 - ROW 4&ndash;&gt;-->
-
-        <!--&lt;!&ndash;KOLOM 1 - ROW 5&ndash;&gt;-->
-        <!--<android.support.v7.widget.CardView-->
-            <!--android:id="@+id/piketcardSelasa5"-->
-            <!--android:layout_height="0dp"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_columnWeight="1"-->
-            <!--android:layout_rowWeight="1"-->
-            <!--android:layout_marginBottom="16dp"-->
-            <!--android:layout_marginLeft="16dp"-->
-            <!--android:layout_marginRight="16dp"-->
-            <!--app:cardElevation="8dp"-->
-            <!--app:cardCornerRadius="8dp">-->
-            <!--<LinearLayout-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="center_horizontal|center_vertical"-->
-                <!--android:layout_margin="16dp"-->
-                <!--android:orientation="vertical">-->
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:textSize="18sp"-->
-                    <!--android:textStyle="bold"-->
-                    <!--android:text="@string/piket.selasa5"-->
-                    <!--android:textColor="@android:color/black"/>-->
-            <!--</LinearLayout>-->
-        <!--</android.support.v7.widget.CardView>-->
-        <!--&lt;!&ndash;KOLOM 1 - ROW 5&ndash;&gt;-->
-
-        <!--&lt;!&ndash;KOLOM 1 - ROW 6&ndash;&gt;-->
-        <!--<android.support.v7.widget.CardView-->
-            <!--android:id="@+id/piketcardSelasa6"-->
-            <!--android:layout_height="0dp"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_columnWeight="1"-->
-            <!--android:layout_rowWeight="1"-->
-            <!--android:layout_marginBottom="16dp"-->
-            <!--android:layout_marginLeft="16dp"-->
-            <!--android:layout_marginRight="16dp"-->
-            <!--app:cardElevation="8dp"-->
-            <!--app:cardCornerRadius="8dp">-->
-            <!--<LinearLayout-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="center_horizontal|center_vertical"-->
-                <!--android:layout_margin="16dp"-->
-                <!--android:orientation="vertical">-->
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:textSize="18sp"-->
-                    <!--android:textStyle="bold"-->
-                    <!--android:text="@string/piket.selasa6"-->
-                    <!--android:textColor="@android:color/black"/>-->
-            <!--</LinearLayout>-->
-        <!--</android.support.v7.widget.CardView>-->
-        <!--&lt;!&ndash;KOLOM 1 - ROW 6&ndash;&gt;-->
-
-        <!--&lt;!&ndash;KOLOM 1 - ROW 7&ndash;&gt;-->
-        <!--<android.support.v7.widget.CardView-->
-            <!--android:id="@+id/piketcardSelasa7"-->
-            <!--android:layout_height="0dp"-->
-            <!--android:layout_width="0dp"-->
-            <!--android:layout_columnWeight="1"-->
-            <!--android:layout_rowWeight="1"-->
-            <!--android:layout_marginBottom="16dp"-->
-            <!--android:layout_marginLeft="16dp"-->
-            <!--android:layout_marginRight="16dp"-->
-            <!--app:cardElevation="8dp"-->
-            <!--app:cardCornerRadius="8dp"-->
-            <!--android:visibility="gone">-->
-            <!--<LinearLayout-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:layout_gravity="center_horizontal|center_vertical"-->
-                <!--android:layout_margin="16dp"-->
-                <!--android:orientation="vertical">-->
-                <!--<TextView-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:textSize="18sp"-->
-                    <!--android:textStyle="bold"-->
-                    <!--android:text="@string/piket.senin6"-->
-                    <!--android:textColor="@android:color/black"/>-->
-            <!--</LinearLayout>-->
-        <!--</android.support.v7.widget.CardView>-->
-        <!--&lt;!&ndash;KOLOM 1 - ROW 7&ndash;&gt;-->
 
     </GridLayout>
 </LinearLayout>

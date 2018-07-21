@@ -27,6 +27,19 @@
     </string-array>
     // End of Nama Kabinet
 
+    // Start of Jadwal Pelajaran
+    <string name="basisData">Basis Data</string>
+    <string name="progas">PROGAS</string>
+    <string name="kjo">KJO</string>
+    <string name="desainGrafis">DDG</string>
+    <string name="fisikaKimia">Fisika Kimia</string>
+    <string name="ppl">PPL</string>
+    <string name="pbo">PBO</string>
+    <string name="pw_pb">PW PB</string>
+    <string name="siskom">Sistem Komputer</string>
+    <string name="istirahat">Istirahat</string>
+    // End of Jadwal Pelajaran
+
     // Start of Absen
     <string name="absen.00">Rosa Anggraeni S.pd</string>
     <string name="absen.01">Aditya Augustaf</string>
@@ -87,19 +100,21 @@
     <string name="senin">Senin</string>
     <string name="pelajaran.senin">Pelajaran Senin</string>
     <string name="piket.senin">Piket Senin</string>
+    <string name="pelajaranSenin.1">07.15 — 08.00</string>
+    <string name="pelajaranSenin.2">08.00 — 08.45</string>
+    <string name="pelajaranSenin.3">08.45 — 09.25</string>
+    <string name="pelajaranSenin.4">09.25 — 10.00</string>
+    <string name="pelajaranSenin.5">10.00 — 10.20</string>
+    <string name="pelajaranSenin.6">10.20 — 10.55</string>
+    <string name="pelajaranSenin.7">10.55 — 11.30</string>
+    <string name="pelajaranSenin.8">11.30 — 12.05</string>
+    <string name="pelajaranSenin.9">12.05 — 12.40</string>
     <string name="piket.senin1">@string/absen.05</string>
     <string name="piket.senin2">@string/absen.21</string>
     <string name="piket.senin3">@string/absen.14</string>
     <string name="piket.senin4">@string/absen.03</string>
     <string name="piket.senin5">@string/absen.02</string>
     <string name="piket.senin6">@string/absen.35</string>
-    <!--<string name="piket.senin1">@string/absen.01</string>-->
-    <!--<string name="piket.senin2">@string/absen.02</string>-->
-    <!--<string name="piket.senin3">@string/absen.03</string>-->
-    <!--<string name="piket.senin4">@string/absen.04</string>-->
-    <!--<string name="piket.senin5">@string/absen.05</string>-->
-    <!--<string name="piket.senin6">@string/absen.06</string>-->
-    <!--<string name="piket.senin7">@string/absen.07</string>-->
     <string-array name="senin">
         <item>@string/senin</item>
         <item>@string/pelajaran.senin</item>
@@ -110,7 +125,6 @@
         <item>@string/piket.senin4</item>
         <item>@string/piket.senin5</item>
         <item>@string/piket.senin6</item>
-        <!--<item>@string/piket.senin7</item>-->
     </string-array>
     // End of Senin
 
@@ -118,19 +132,21 @@
     <string name="selasa">Selasa</string>
     <string name="pelajaran.selasa">Pelajaran Selasa</string>
     <string name="piket.selasa">Piket Selasa</string>
+    <string name="pelajaranSelasa.1">13.00 — 13.35</string>
+    <string name="pelajaranSelasa.2">13.35 — 14.05</string>
+    <string name="pelajaranSelasa.3">14.05 — 14.40</string>
+    <string name="pelajaranSelasa.4">14.40 — 15.15</string>
+    <string name="pelajaranSelasa.5">15.15 — 15.35</string>
+    <string name="pelajaranSelasa.6">15.35 — 16.05</string>
+    <string name="pelajaranSelasa.7">16.05 — 16.40</string>
+    <string name="pelajaranSelasa.8">16.40 — 17.15</string>
+    <string name="pelajaranSelasa.9">17.15 — 17.50</string>
     <string name="piket.selasa1">@string/absen.12</string>
     <string name="piket.selasa2">@string/absen.34</string>
     <string name="piket.selasa3">@string/absen.30</string>
     <string name="piket.selasa4">@string/absen.18</string>
     <string name="piket.selasa5">@string/absen.31</string>
     <string name="piket.selasa6">@string/absen.17</string>
-    <!--<string name="piket.senin1">@string/absen.08</string>-->
-    <!--<string name="piket.senin2">@string/absen.09</string>-->
-    <!--<string name="piket.senin3">@string/absen.10</string>-->
-    <!--<string name="piket.senin4">@string/absen.11</string>-->
-    <!--<string name="piket.senin5">@string/absen.12</string>-->
-    <!--<string name="piket.senin6">@string/absen.13</string>-->
-    <!--<string name="piket.senin7">@string/absen.14</string>-->
     <string-array name="selasa">
         <item>@string/selasa</item>
         <item>@string/pelajaran.selasa</item>
@@ -141,7 +157,6 @@
         <item>@string/piket.selasa4</item>
         <item>@string/piket.selasa5</item>
         <item>@string/piket.selasa6</item>
-        <!--<item>@string/piket.selasa7</item>-->
     </string-array>
     // End of Selasa
 
@@ -149,19 +164,21 @@
     <string name="rabu">Rabu</string>
     <string name="pelajaran.rabu">Pelajaran Rabu</string>
     <string name="piket.rabu">Piket Rabu</string>
+    <string name="pelajaranRabu.1">13.00 — 13.35</string>
+    <string name="pelajaranRabu.2">13.35 — 14.05</string>
+    <string name="pelajaranRabu.3">14.05 — 14.40</string>
+    <string name="pelajaranRabu.4">14.40 — 15.15</string>
+    <string name="pelajaranRabu.5">15.15 — 15.35</string>
+    <string name="pelajaranRabu.6">15.35 — 16.05</string>
+    <string name="pelajaranRabu.7">16.05 — 16.40</string>
+    <string name="pelajaranRabu.8">16.40 — 17.15</string>
+    <string name="pelajaranRabu.9">17.15 — 17.50</string>
     <string name="piket.rabu1">@string/absen.01</string>
     <string name="piket.rabu2">@string/absen.26</string>
     <string name="piket.rabu3">@string/absen.20</string>
     <string name="piket.rabu4">@string/absen.27</string>
     <string name="piket.rabu5">@string/absen.33</string>
     <string name="piket.rabu6">@string/absen.13</string>
-    <!--<string name="piket.senin1">@string/absen.15</string>-->
-    <!--<string name="piket.senin2">@string/absen.16</string>-->
-    <!--<string name="piket.senin3">@string/absen.17</string>-->
-    <!--<string name="piket.senin4">@string/absen.18</string>-->
-    <!--<string name="piket.senin5">@string/absen.19</string>-->
-    <!--<string name="piket.senin6">@string/absen.20</string>-->
-    <!--<string name="piket.senin7">@string/absen.21</string>-->
     <string-array name="rabu">
         <item>@string/rabu</item>
         <item>@string/pelajaran.rabu</item>
@@ -172,7 +189,6 @@
         <item>@string/piket.rabu4</item>
         <item>@string/piket.rabu5</item>
         <item>@string/piket.rabu6</item>
-        <!--<item>@string/piket.rabu7</item>-->
     </string-array>
     // End of Rabu
 
@@ -180,19 +196,21 @@
     <string name="kamis">Kamis</string>
     <string name="pelajaran.kamis">Pelajaran Kamis</string>
     <string name="piket.kamis">Piket Kamis</string>
+    <string name="pelajaranKamis.1">07.10 — 07.55</string>
+    <string name="pelajaranKamis.2">07.55 — 08.40</string>
+    <string name="pelajaranKamis.3">08.40 — 09.20</string>
+    <string name="pelajaranKamis.4">09.20 — 09.55</string>
+    <string name="pelajaranKamis.5">09.55 — 10.15</string>
+    <string name="pelajaranKamis.6">10.15 — 10.20</string>
+    <string name="pelajaranKamis.7">10.20 — 10.55</string>
+    <string name="pelajaranKamis.8">10.55 — 11.35</string>
+    <string name="pelajaranKamis.9">11.35 — 12.15</string>
     <string name="piket.kamis1">@string/absen.23</string>
     <string name="piket.kamis2">@string/absen.06</string>
     <string name="piket.kamis3">@string/absen.22</string>
     <string name="piket.kamis4">@string/absen.25</string>
     <string name="piket.kamis5">@string/absen.07</string>
     <string name="piket.kamis6">@string/absen.11</string>
-    <!--<string name="piket.senin1">@string/absen.22</string>-->
-    <!--<string name="piket.senin2">@string/absen.23</string>-->
-    <!--<string name="piket.senin3">@string/absen.24</string>-->
-    <!--<string name="piket.senin4">@string/absen.25</string>-->
-    <!--<string name="piket.senin5">@string/absen.26</string>-->
-    <!--<string name="piket.senin6">@string/absen.27</string>-->
-    <!--<string name="piket.senin7">@string/absen.28</string>-->
     <string-array name="kamis">
         <item>@string/kamis</item>
         <item>@string/pelajaran.kamis</item>
@@ -203,7 +221,6 @@
         <item>@string/piket.kamis4</item>
         <item>@string/piket.kamis5</item>
         <item>@string/piket.kamis6</item>
-        <!--<item>@string/piket.kamis7</item>-->
     </string-array>
     // End of Kamis
 
@@ -211,19 +228,21 @@
     <string name="jumat">Jumat</string>
     <string name="pelajaran.jumat">Pelajaran Jumat</string>
     <string name="piket.jumat">Piket Jumat</string>
+    <string name="pelajaranJumat.1">07.00 — 07.45</string>
+    <string name="pelajaranJumat.2">07.45 — 08.20</string>
+    <string name="pelajaranJumat.3">08.20 — 08.50</string>
+    <string name="pelajaranJumat.4">08.50 — 09.20</string>
+    <string name="pelajaranJumat.5">09.20 — 09.40</string>
+    <string name="pelajaranJumat.6">09.40 — 10.10</string>
+    <string name="pelajaranJumat.7">10.10 — 10.40</string>
+    <string name="pelajaranJumat.8">10.40 — 11.10</string>
+    <string name="pelajaranJumat.9">11.10 — 11.40</string>
     <string name="piket.jumat1">@string/absen.32</string>
     <string name="piket.jumat2">@string/absen.24</string>
     <string name="piket.jumat3">@string/absen.10</string>
     <string name="piket.jumat4">@string/absen.29</string>
     <string name="piket.jumat5">@string/absen.09</string>
     <string name="piket.jumat6">@string/absen.15</string>
-    <!--<string name="piket.senin1">@string/absen.29</string>-->
-    <!--<string name="piket.senin2">@string/absen.30</string>-->
-    <!--<string name="piket.senin3">@string/absen.31</string>-->
-    <!--<string name="piket.senin4">@string/absen.32</string>-->
-    <!--<string name="piket.senin5">@string/absen.33</string>-->
-    <!--<string name="piket.senin6">@string/absen.34</string>-->
-    <!--<string name="piket.senin7">@string/absen.35</string>-->
     <string-array name="jumat">
         <item>@string/jumat</item>
         <item>@string/pelajaran.jumat</item>
@@ -234,7 +253,6 @@
         <item>@string/piket.jumat4</item>
         <item>@string/piket.jumat5</item>
         <item>@string/piket.jumat6</item>
-        <!--<item>@string/piket.jumat7</item>-->
     </string-array>
     // End of Jumat
 
@@ -242,6 +260,15 @@
     <string name="sabtu">Sabtu</string>
     <string name="pelajaran.sabtu">Pelajaran Sabtu</string>
     <string name="piket.sabtu">Piket Sabtu</string>
+    <string name="pelajaranSabtu.1">13.00 — 13.35</string>
+    <string name="pelajaranSabtu.2">13.35 — 14.05</string>
+    <string name="pelajaranSabtu.3">14.05 — 14.40</string>
+    <string name="pelajaranSabtu.4">14.40 — 15.15</string>
+    <string name="pelajaranSabtu.5">15.15 — 15.35</string>
+    <string name="pelajaranSabtu.6">15.35 — 16.05</string>
+    <string name="pelajaranSabtu.7">16.05 — 16.40</string>
+    <string name="pelajaranSabtu.8">16.40 — 17.15</string>
+    <string name="pelajaranSabtu.9">17.15 — 17.50</string>
     <string name="piket.sabtu1">@string/absen.16</string>
     <string name="piket.sabtu2">@string/absen.28</string>
     <string name="piket.sabtu3">@string/absen.04</string>
