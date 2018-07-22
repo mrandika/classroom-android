@@ -29,9 +29,9 @@
 
     // Start of Jadwal Pelajaran
     <string name="basisData">Basis Data</string>
-    <string name="progas">PROGAS</string>
-    <string name="kjo">KJO</string>
-    <string name="desainGrafis">DDG</string>
+    <string name="progdas">PROGDAS</string>
+    <string name="kjd">Jaringan Dasar</string>
+    <string name="desainGrafis">Desain Grafis</string>
     <string name="fisikaKimia">Fisika Kimia</string>
     <string name="ppl">PPL</string>
     <string name="pbo">PBO</string>

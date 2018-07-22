@@ -49,6 +49,12 @@ public class laporanPiket extends AppCompatActivity {
         SimpleDateFormat simpleFormat = new SimpleDateFormat("EEEE, dd MMM yyyy.", new Locale("id"));
         final String simpleDateOutput = simpleFormat.format(detailedDate);
 
+        if (simpleDateOutput.contains("Senin") || (simpleDateOutput.contains("Selasa") || (simpleDateOutput.contains("Kamis") || (simpleDateOutput.contains("Jumat") || (simpleDateOutput.contains("Sabtu")))))) {
+            ruang.setText("22");
+        } else if (simpleDateOutput.contains("Rabu")) {
+            ruang.setText("07");
+        }
+
         data.setText(simpleDateOutput);
 
         kirimLaporan.setOnClickListener(new View.OnClickListener() {

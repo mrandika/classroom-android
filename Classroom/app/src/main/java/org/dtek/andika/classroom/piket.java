@@ -1,11 +1,18 @@
 package org.dtek.andika.classroom;
 
+import android.content.DialogInterface;
 import android.content.Intent;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.CardView;
 import android.view.View;
 import android.widget.ImageButton;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -31,8 +38,30 @@ public class piket extends AppCompatActivity {
         unggahLaporan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(piket.this, laporanPiket.class);
-                startActivity(intent);
+                Date detailedDate = Calendar.getInstance().getTime();
+                SimpleDateFormat simpleFormat = new SimpleDateFormat("EEEE", new Locale("id"));
+                final String simpleDateOutput = simpleFormat.format(detailedDate);
+
+                if (simpleDateOutput.contains("Minggu")) {
+                    final AlertDialog.Builder builder = new AlertDialog.Builder(piket.this)
+                            .setIcon(R.drawable.forbidden)
+                            .setTitle("Kesalahan!")
+                            .setMessage("Anda sepertinya ingin mengirim laporan dihari "+simpleDateOutput+"" +
+                                    ". Pengiriman laporan dihari libur tidak diperbolehkan. " +
+                                    "\n\nFitur unggah laporan akan dinonaktifkan, untuk mengaktifkan kembali, " +
+                                    "buka ulang aplikasi.")
+                            .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialogInterface, int i) {
+                                    // Do nothing and close dialog
+                                }
+                            });
+                    builder.show();
+                    unggahLaporan.setEnabled(false);
+                } else {
+                    Intent intent = new Intent(piket.this, laporanPiket.class);
+                    startActivity(intent);
+                }
             }
         });
 
