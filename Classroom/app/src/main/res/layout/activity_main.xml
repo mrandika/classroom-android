@@ -38,22 +38,22 @@
         </TextView>
     </RelativeLayout>
 
-    <GridLayout
-        android:columnCount="2"
-        android:rowCount="2"
-        android:columnOrderPreserved="false"
-        android:alignmentMode="alignMargins"
+    <android.support.v7.widget.GridLayout
+        app:columnCount="2"
+        app:rowCount="2"
+        app:columnOrderPreserved="false"
+        app:alignmentMode="alignMargins"
         android:layout_weight="8"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
+        android:layout_height="wrap_content">
 
         <!--KOLOM 1 - ROW 1-->
         <android.support.v7.widget.CardView
             android:id="@+id/cardPelajaran"
             android:layout_height="0dp"
             android:layout_width="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
@@ -94,8 +94,8 @@
             android:id="@+id/cardPiket"
             android:layout_height="0dp"
             android:layout_width="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
@@ -136,8 +136,8 @@
             android:id="@+id/cardKabinet"
             android:layout_height="0dp"
             android:layout_width="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
@@ -178,8 +178,8 @@
             android:id="@+id/cardFeedback"
             android:layout_height="0dp"
             android:layout_width="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
@@ -215,5 +215,5 @@
         </android.support.v7.widget.CardView>
         <!--KOLOM 2 - ROW 2-->
 
-    </GridLayout>
+    </android.support.v7.widget.GridLayout>
 </LinearLayout>

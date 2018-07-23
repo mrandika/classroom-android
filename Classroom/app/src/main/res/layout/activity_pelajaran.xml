@@ -27,11 +27,11 @@
         </TextView>
     </RelativeLayout>
 
-    <GridLayout
-        android:columnCount="1"
-        android:rowCount="6"
-        android:columnOrderPreserved="false"
-        android:alignmentMode="alignMargins"
+    <android.support.v7.widget.GridLayout
+        app:columnCount="1"
+        app:rowCount="6"
+        app:columnOrderPreserved="false"
+        app:alignmentMode="alignMargins"
         android:layout_weight="8"
         android:layout_width="match_parent"
         android:layout_height="0dp">
@@ -41,8 +41,8 @@
             android:id="@+id/pelajarancardSenin"
             android:layout_height="0dp"
             android:layout_width="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
@@ -76,8 +76,8 @@
             android:id="@+id/pelajarancardSelasa"
             android:layout_height="0dp"
             android:layout_width="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
@@ -110,8 +110,8 @@
             android:id="@+id/pelajarancardRabu"
             android:layout_height="0dp"
             android:layout_width="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
@@ -144,8 +144,8 @@
             android:id="@+id/pelajarancardKamis"
             android:layout_height="0dp"
             android:layout_width="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
@@ -178,8 +178,8 @@
             android:id="@+id/pelajarancardJumat"
             android:layout_height="0dp"
             android:layout_width="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
@@ -212,8 +212,8 @@
             android:id="@+id/pelajarancardSabtu"
             android:layout_height="0dp"
             android:layout_width="0dp"
-            android:layout_columnWeight="1"
-            android:layout_rowWeight="1"
+            app:layout_columnWeight="1"
+            app:layout_rowWeight="1"
             android:layout_marginBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
@@ -241,5 +241,5 @@
         </android.support.v7.widget.CardView>
         <!--KOLOM 1 - ROW 6-->
 
-    </GridLayout>
+    </android.support.v7.widget.GridLayout>
 </LinearLayout>
